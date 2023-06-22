@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/style/style.css">
+    <script src="src/js/validate.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="logo-container">
+                <h1><em>Company Logo</em></h1>
+            </div>
+        </div>
+        <div class="right">
+            <p class="heading-text">This is a sign up page mockup. Filling in the credentials <br>will not sign you up
+                for anything.
+                It will just do some basic validation<br> on your input.
+                Give it a shot!
+            </p>
+            <form id="signupForm">
+                <div class="inputs">
+                    <h2>Let's do this!</h2>
+
+                    <div>
+                        <label for="firstname"> First Name </label>
+                        <input type="text" placeholder="First Name" id="firstname" required></input>
+                    </div>
+
+                    <div>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" placeholder="Last Name" id="lastname" required></input>
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="myemail@domain.com" id="email" required></input>
+                    </div>
+
+                    <div>
+                        <label for="phonenumber">Phone Number</label>
+                        <input title="ten digit phone number mixed with dashes" type="text" placeholder="123-555-1234"
+                            id="phonenumber" required></input>
+                    </div>
+
+                    <div>
+                        <label for="password">Password</label>
+                        <input
+                            title="Passwords must be 8-24 characters long with at least one uppercase, number, and special character"
+                            type="password" placeholder="password" id="password" minlength="8" maxlength="32"
+                            required></input>
+                    </div>
+
+
+                    <div>
+                        <label for="cpassword">Confirm Password</label>
+                        <input type="password"
+                            title="Passwords must be 8-24 characters long with at least one uppercase, number, and special character"
+                            placeholder="confirm password" id="cpassword" minlength="8" maxlength="32" required></input>
+                    </div>
+
+                </div>
+                <div class="bottom-form">
+                    <button type="submit"> Create Account </button>
+                    <p> Already have an account? <a href="https://www.youtube.com/watch?v=cW_nddc92q8"> Log in </a></p>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+</body>

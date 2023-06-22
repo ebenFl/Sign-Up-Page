@@ -1,0 +1,91 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color:  #34495e ;   
+    color: #cfd0cf;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 5fr;
+    height: 100vh;
+}
+
+.left {
+    grid-row: 1;
+    grid-column: 1;
+    background-image: url("../imgs/flaura.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.inputs {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: #85929e ;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    color:beige;
+}
+
+a:visited {
+    color: lightcoral;
+}
+
+.inputs input {
+    width: 70%;
+}
+
+.inputs h2 {
+    grid-column: span 2;
+    grid-row: 1;
+}
+
+.inputs > * {
+    margin-left: 4rem;
+}
+
+.inputs > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-top: calc(100vh / 8);
+}
+
+.logo-container img {
+    height: 15vh;
+}
+
+.right {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-text {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 4rem;
+}
+
+.bottom-form {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 4rem;
+}
